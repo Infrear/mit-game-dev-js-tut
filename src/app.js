@@ -1,6 +1,9 @@
 import Phaser from "phaser";
 
 class GameScene extends Phaser.Scene {
+  /**
+   * Load any assets you might need here!
+   */
   preload() {
     this.load.image("player", "assets/player.png");
 
@@ -58,7 +61,7 @@ class GameScene extends Phaser.Scene {
    * Check to see whether the player has collided with any coins
    */
   checkCoinCollisions() {
-    // TODO 7: check for coin collision and update score accordingly
+    // TODO 7: check for coin collision and update state accordingly
   }
 
   /**
@@ -96,5 +99,5 @@ this.walls.create(450, 330, "wallHorizontal"); // Bottom right
 this.walls.create(0, 170, "wallHorizontal"); // Middle left
 this.walls.create(500, 170, "wallHorizontal"); // Middle right
 this.walls.create(250, 90, "wallHorizontal"); // Middle top
-this.walls.create(250, 250, "wallHorizontal"); // Middle botto
+this.walls.create(250, 250, "wallHorizontal"); // Middle bottom
 */
